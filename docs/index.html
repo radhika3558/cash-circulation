@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content=""> <!-- update -->
+  <meta property="og:description"
+    content=""><!-- update -->
+  <meta property="og:type" content="article">
+  <meta property="og:image"
+    content=""> <!-- update -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@radhika385">
+  <meta name="twitter:image"
+    content=""><!-- update -->
+  </meta>
+  <!-- Content here -->
+
+  <title>Cash Crunch</title>
+  <link rel="icon" href="Images/money-with-wings.png">
+  <script src="https://kit.fontawesome.com/6630dd9732.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+        body {
+            margin:auto;
+            padding:50px 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Lora', serif;
+        }
+        .sans-serif {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* choose a light or dark theme to add to the body tag. */
+        .dark-theme {
+            background-color: #151515;
+            color: #fbfbfb;
+        }
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .header {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .story-body, .header, .chart-section, .footer {
+            margin:auto;
+            max-width: 700px;
+        }
+
+        .footer {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .chart-section.wide{
+            width:100%;
+            max-width:1200px;
+        }
+
+        .chart-section.wide p.chart-title {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .chart-section.wide p.chart-subhead {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+		
+
+        /* text styles */
+
+        p.kicker {
+            font-size:1rem;
+            text-transform:uppercase;
+        }
+
+        .text-center {
+            text-align:center;
+        }
+
+        h1.headline {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            font-weight: 800;
+        }
+
+        h2.subhead {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom:0;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        p.body-text {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-top:0;
+            margin-bottom:15px;
+        }
+
+        h3.section-head {
+            font-size:2rem;
+            margin:40px 0 10px 0;
+            font-weight:700;
+            line-height:1.3;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            line-height: 0.75;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight:400;
+            text-transform:uppercase;
+            letter-spacing:0.5px;
+        }
+
+
+        p.note {
+            font-size:0.85rem;
+        }
+
+        /* chart styles */
+
+        .chart-section {
+            width:100%;
+            max-width:1200px;
+            padding:20px 0px;
+        }
+
+        .story-body .chart-section {
+            padding-top:0px;
+        }
+
+
+        .chart-row {
+            display:flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+
+        p.chart-title {
+            font-size:1.3rem;
+            font-weight:700;
+            max-width:700px;
+            margin:0px auto 5px auto;
+        }
+        p.chart-subhead {
+            margin:0 auto;
+            max-width:700px;
+            font-size:1rem;
+            margin-bottom:15px;
+        }
+
+        p.chart-label {
+            margin:0 0 5px 0;
+            font-size:0.85rem;
+            text-transform:uppercase;
+            font-weight:600;
+        }
+
+        .chart-row .chart {
+            width:100%;
+            padding-right:15px;
+            min-width:calc(25% - 15px);
+
+        }
+
+
+
+        p.chart-source {
+            font-size:0.85rem;
+            margin:0;
+        }
+
+
+
+
+
+        /* photos */
+
+        .photo-section {
+            padding:30px 0px;
+            width:100%;
+            margin:auto;
+            display:flex;
+            max-width:1200px;
+        }
+
+        .photo {
+            width:100%;
+            padding-right:15px;
+        }
+        .photo img {
+            width:100%;	
+        }
+
+        p.caption {
+            font-size:0.9rem;
+            margin:0;
+        }
+
+
+
+        /* mobile */
+
+        @media (max-width:700px) {
+
+            .chart-row {
+                display:block;
+            }
+
+            .chart-row .chart {
+                padding:0;
+            }
+
+            .photo-section {
+                display:block;
+            }
+            .photo {
+                padding:0;
+            }
+
+        }
+    </style>
+    <style>
+        /* These are the styles for ai2html */
+        
+        #g-template-laptop, #g-template-medium, #g-template-mobile {
+            display: none;
+        }
+
+        @media (max-width: 490px) {
+            #g-template-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 490px) and (max-width: 620px) {
+            #g-template-laptop {
+                display: block;
+            }
+        }
+
+        @media (min-width: 620px)  {
+            #g-template-medium {
+                display: block;
+            }
+        }
+
+    </style>
+    <!-- Collapsing column code  -->
+    <style>
+        .row-container {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          gap: 2em;
+        }
+        
+        .column-container {
+          flex-grow: 1;
+        }
+        
+        @media (max-width: 650px) {
+          .row-container {
+            flex-direction: column;
+          }
+        }
+        </style>
+        
+    
+    <!-- google fonts: Open Sans (sans-serif) and Lora (serif) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+      
+    
+  </head>
+
+  <body class="light-theme"> <!-- all of the content on your html page goes inside the body -->
+
+    <div class="header">
+      
+      <img class="crown" src="Images/Firefly-cash-register.jpg" alt="topper" pinger-seen="true"></img>
+      <h1 class="headline">Cash crunch: the US now produces less cash as electronic payments take hold</h1>
+      <h2 class="subhead">Note and coin production in the US are near historic lows</h2>
+      <p class="byline">By <a href="https://radhika3558.github.io/" target="_blank">Radhika Rukmangadhan </a></p>
+      <p class="date"></p>
+    </div>
+
+    <div class="story-body">
+      <p class="body-text serif">Busking at the Times Square subway station is now mostly digital. A quick look at the hats placed in front of performance will show how little they earn in cash. Instead, busker now brandish large QR code displays that direct patrons toward Venmo or Zelle accounts.</p>
+	  <p class="body-text serif">Shane Hill, a busker who regularly plays popular tunes on the saxophone at the station said he earns more through digital payments than in cash.</p> 
+	  <p class="body-text serif">“I used to make a lot more in cash, but now it’s mostly digital,” he said. “I think people are just carrying less cash.”</p>
+	  <p class="body-text serif">The shift to digital payments is not just a New York phenomenon. The US is producing less cash than it has in decades. The Federal Reserve has been producing fewer notes and coins since 2015, and the trend has only accelerated since the pandemic. </p>
+	  <p class="body-text serif">The US produced 5.7 billion notes in 2021, down from 7.6 billion in 2016. Coin production has also fallen, from 17 billion coins in 2015 to 12 billion in 2023. </p>
+      <p class="body-text serif">This is a result of the drastic decline in the number of cash payments made by consumers in the US.</p>
+    </div>
+
+    <div class="chart-section">
+        <div class="chart-row">
+          <div class="chart">
+
+
+
+
+            <!--- PASTE YOUR AI2HTML AFTER THIS LINE -->
+
+<!-- Generated by ai2html v0.102.0 - 2024-03-03 13:53 -->
+<!-- ai file: template.ai -->
+<style media="screen,print">
+	#g-template-box ,
+	#g-template-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-template-box p {
+		margin:0;
+	}
+	#g-template-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-template-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-template-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-template-box .g-aiPointText p { white-space: nowrap; }
+	#g-template-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-template-medium p {
+		font-family:Roboto;
+		font-weight:400;
+		line-height:18px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		font-size:16px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-template-medium .g-pstyle0 {
+		height:18px;
+		color:rgb(162,162,162);
+	}
+	#g-template-medium .g-pstyle1 {
+		height:18px;
+	}
+	#g-template-medium .g-pstyle2 {
+		height:18px;
+		color:rgb(31,135,95);
+	}
+	#g-template-medium .g-pstyle3 {
+		height:18px;
+		color:rgb(116,116,116);
+	}
+	#g-template-medium .g-pstyle4 {
+		height:18px;
+		color:rgb(101,101,101);
+	}
+	#g-template-medium .g-pstyle5 {
+		height:18px;
+		color:rgb(136,136,136);
+	}
+	#g-template-laptop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-template-laptop p {
+		font-family:Roboto;
+		font-weight:400;
+		line-height:18px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		font-size:16px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-template-laptop .g-pstyle0 {
+		height:18px;
+		color:rgb(162,162,162);
+	}
+	#g-template-laptop .g-pstyle1 {
+		height:18px;
+	}
+	#g-template-laptop .g-pstyle2 {
+		height:18px;
+		color:rgb(31,135,95);
+	}
+	#g-template-laptop .g-pstyle3 {
+		height:18px;
+		color:rgb(116,116,116);
+	}
+	#g-template-laptop .g-pstyle4 {
+		height:18px;
+		color:rgb(101,101,101);
+	}
+	#g-template-laptop .g-pstyle5 {
+		height:18px;
+		color:rgb(136,136,136);
+	}
+	#g-template-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-template-mobile p {
+		font-family:Roboto;
+		font-weight:400;
+		line-height:18px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		font-size:16px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-template-mobile .g-pstyle0 {
+		height:18px;
+		color:rgb(162,162,162);
+	}
+	#g-template-mobile .g-pstyle1 {
+		height:18px;
+	}
+	#g-template-mobile .g-pstyle2 {
+		height:18px;
+		color:rgb(31,135,95);
+	}
+	#g-template-mobile .g-pstyle3 {
+		height:18px;
+		color:rgb(116,116,116);
+	}
+	#g-template-mobile .g-pstyle4 {
+		height:18px;
+		color:rgb(101,101,101);
+	}
+	#g-template-mobile .g-pstyle5 {
+		height:18px;
+		color:rgb(136,136,136);
+	}
+
+</style>
+
+<div id="g-template-box" class="ai2html">
+
+	<!-- Artboard: medium -->
+	<div id="g-template-medium" class="g-artboard" style="width:620px; height:425px;" data-aspect-ratio="1.459" data-min-width="620">
+<div style=""></div>
+		<img id="g-template-medium-img" class="g-aiImg" alt="" src="template-medium.png"/>
+		<div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.5322%;margin-top:-10px;left:2.3125%;width:49px;">
+			<p class="g-pstyle0">32%</p>
+		</div>
+		<div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:12.9439%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">30</p>
+		</div>
+		<div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:22.1204%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">28</p>
+		</div>
+		<div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:29.4145%;margin-top:-10px;left:66.2543%;width:198px;">
+			<p class="g-pstyle1">Cash payments have fallen </p>
+		</div>
+		<div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:31.5322%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">26</p>
+		</div>
+		<div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:33.4145%;margin-top:-10px;left:66.2543%;width:192px;">
+			<p class="g-pstyle1">by more than a third since </p>
+		</div>
+		<div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:37.4145%;margin-top:-10px;left:66.2543%;width:54px;">
+			<p class="g-pstyle1">2016</p>
+		</div>
+		<div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:40.9439%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">24</p>
+		</div>
+		<div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:50.3557%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">22</p>
+		</div>
+		<div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:59.5322%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">20</p>
+		</div>
+		<div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:68.9439%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">18</p>
+		</div>
+		<div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.7675%;margin-top:-10px;left:92.6177%;width:49px;">
+			<p class="g-pstyle2">18%</p>
+		</div>
+		<div id="g-ai0-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:78.3557%;margin-top:-10px;left:2.3125%;width:38px;">
+			<p class="g-pstyle0">16</p>
+		</div>
+		<div id="g-ai0-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7086%;margin-top:-10px;left:8.9295%;width:54px;">
+			<p class="g-pstyle3">2016</p>
+		</div>
+		<div id="g-ai0-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7086%;margin-top:-10px;left:22.3586%;width:54px;">
+			<p class="g-pstyle3">2017</p>
+		</div>
+		<div id="g-ai0-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7086%;margin-top:-10px;left:35.7511%;width:54px;">
+			<p class="g-pstyle3">2018</p>
+		</div>
+		<div id="g-ai0-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7086%;margin-top:-10px;left:49.1435%;width:54px;">
+			<p class="g-pstyle3">2019</p>
+		</div>
+		<div id="g-ai0-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7086%;margin-top:-10px;left:62.536%;width:54px;">
+			<p class="g-pstyle3">2020</p>
+		</div>
+		<div id="g-ai0-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7086%;margin-top:-10px;left:75.9651%;width:54px;">
+			<p class="g-pstyle3">2021</p>
+		</div>
+		<div id="g-ai0-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7086%;margin-top:-10px;left:89.3576%;width:54px;">
+			<p class="g-pstyle3">2022</p>
+		</div>
+		<div id="g-ai0-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:92.9439%;margin-top:-10px;left:2.3125%;width:333px;">
+			<p class="g-pstyle4">Cash payments as a percentage of all payments.</p>
+		</div>
+		<div id="g-ai0-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.1792%;margin-top:-10px;left:2.3125%;width:70px;">
+			<p class="g-pstyle5">Source:</p>
+		</div>
+		<div id="g-ai0-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.1792%;margin-top:-10px;left:11.2869%;width:146px;">
+			<p class="g-pstyle5">US Federal Reserve</p>
+		</div>
+	</div>
+
+	<!-- Artboard: laptop -->
+	<div id="g-template-laptop" class="g-artboard" style="width:490px; height:350px;" data-aspect-ratio="1.4" data-min-width="490" data-max-width="619">
+<div style=""></div>
+		<img id="g-template-laptop-img" class="g-aiImg" alt="" src="template-laptop.png"/>
+		<div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:9.4319%;margin-top:-10px;left:8.4461%;width:47px;">
+			<p class="g-pstyle0">32%</p>
+		</div>
+		<div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:18.0033%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">30</p>
+		</div>
+		<div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:26.2891%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">28</p>
+		</div>
+		<div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.5748%;margin-top:-10px;left:64.2435%;width:188px;">
+			<p class="g-pstyle1">Cash payments have fallen </p>
+		</div>
+		<div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:34.5748%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">26</p>
+		</div>
+		<div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:36.0033%;margin-top:-10px;left:64.2435%;width:182px;">
+			<p class="g-pstyle1">by more than a third since </p>
+		</div>
+		<div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:39.4319%;margin-top:-10px;left:64.2435%;width:53px;">
+			<p class="g-pstyle1">2016</p>
+		</div>
+		<div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.8605%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">24</p>
+		</div>
+		<div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.1462%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">22</p>
+		</div>
+		<div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:59.4319%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">20</p>
+		</div>
+		<div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.7176%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">18</p>
+		</div>
+		<div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:70.0033%;margin-top:-10px;left:87.2487%;width:47px;">
+			<p class="g-pstyle2">18%</p>
+		</div>
+		<div id="g-ai1-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.0033%;margin-top:-10px;left:8.4461%;width:37px;">
+			<p class="g-pstyle0">16</p>
+		</div>
+		<div id="g-ai1-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.4319%;margin-top:-10px;left:14.2203%;width:53px;">
+			<p class="g-pstyle3">2016</p>
+		</div>
+		<div id="g-ai1-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.4319%;margin-top:-10px;left:25.9387%;width:53px;">
+			<p class="g-pstyle3">2017</p>
+		</div>
+		<div id="g-ai1-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.4319%;margin-top:-10px;left:37.6256%;width:53px;">
+			<p class="g-pstyle3">2018</p>
+		</div>
+		<div id="g-ai1-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.4319%;margin-top:-10px;left:49.312%;width:53px;">
+			<p class="g-pstyle3">2019</p>
+		</div>
+		<div id="g-ai1-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.4319%;margin-top:-10px;left:60.9985%;width:53px;">
+			<p class="g-pstyle3">2020</p>
+		</div>
+		<div id="g-ai1-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.4319%;margin-top:-10px;left:72.7172%;width:53px;">
+			<p class="g-pstyle3">2021</p>
+		</div>
+		<div id="g-ai1-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.4319%;margin-top:-10px;left:84.4037%;width:53px;">
+			<p class="g-pstyle3">2022</p>
+		</div>
+		<div id="g-ai1-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.8605%;margin-top:-10px;left:8.4461%;width:316px;">
+			<p class="g-pstyle4">Cash payments as a percentage of all payments.</p>
+		</div>
+		<div id="g-ai1-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:94.2891%;margin-top:-10px;left:8.6502%;width:68px;">
+			<p class="g-pstyle5">Source:</p>
+		</div>
+		<div id="g-ai1-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:94.2891%;margin-top:-10px;left:18.5645%;width:139px;">
+			<p class="g-pstyle5">US Federal Reserve</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-template-mobile" class="g-artboard" style="max-width: 375px;max-height: 471px" data-aspect-ratio="0.797" data-min-width="0" data-max-width="489">
+<div style="padding: 0 0 125.5467% 0;"></div>
+		<img id="g-template-mobile-img" class="g-aiImg" alt="" src="template-mobile.png"/>
+		<div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.9235%;margin-top:-10px;left:2.0917%;width:37px;">
+			<p class="g-pstyle0">32%</p>
+		</div>
+		<div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:17.8445%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">30</p>
+		</div>
+		<div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:26.553%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">28</p>
+		</div>
+		<div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:33.35%;margin-top:-10px;left:60.5531%;width:124px;">
+			<p class="g-pstyle1">Cash payments have fallen </p>
+		</div>
+		<div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.474%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">26</p>
+		</div>
+		<div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:37.1733%;margin-top:-10px;left:60.5531%;width:120px;">
+			<p class="g-pstyle1">by more than a third since </p>
+		</div>
+		<div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:40.7841%;margin-top:-10px;left:60.5531%;width:41px;">
+			<p class="g-pstyle1">2016</p>
+		</div>
+		<div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:44.1826%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">24</p>
+		</div>
+		<div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:53.1036%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">22</p>
+		</div>
+		<div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:62.0246%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">20</p>
+		</div>
+		<div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:70.7332%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">18</p>
+		</div>
+		<div id="g-ai2-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:73.4944%;margin-top:-10px;left:92.1893%;width:37px;">
+			<p class="g-pstyle2">18%</p>
+		</div>
+		<div id="g-ai2-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.6541%;margin-top:-10px;left:2.0917%;width:31px;">
+			<p class="g-pstyle0">16</p>
+		</div>
+		<div id="g-ai2-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6015%;margin-top:-10px;left:8.6935%;width:41px;">
+			<p class="g-pstyle3">2016</p>
+		</div>
+		<div id="g-ai2-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6015%;margin-top:-10px;left:22.0919%;width:41px;">
+			<p class="g-pstyle3">2017</p>
+		</div>
+		<div id="g-ai2-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6015%;margin-top:-10px;left:35.4534%;width:41px;">
+			<p class="g-pstyle3">2018</p>
+		</div>
+		<div id="g-ai2-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6015%;margin-top:-10px;left:48.8154%;width:41px;">
+			<p class="g-pstyle3">2019</p>
+		</div>
+		<div id="g-ai2-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6015%;margin-top:-10px;left:62.1768%;width:41px;">
+			<p class="g-pstyle3">2020</p>
+		</div>
+		<div id="g-ai2-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6015%;margin-top:-10px;left:75.5753%;width:41px;">
+			<p class="g-pstyle3">2021</p>
+		</div>
+		<div id="g-ai2-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6015%;margin-top:-10px;left:88.9365%;width:41px;">
+			<p class="g-pstyle3">2022</p>
+		</div>
+		<div id="g-ai2-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.4604%;margin-top:-10px;left:2.0917%;width:202px;">
+			<p class="g-pstyle4">Cash payments as a percentage of all payments.</p>
+		</div>
+		<div id="g-ai2-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.4961%;margin-top:-10px;left:2.0917%;width:50px;">
+			<p class="g-pstyle5">Source:</p>
+		</div>
+		<div id="g-ai2-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.4961%;margin-top:-10px;left:15.8271%;width:93px;">
+			<p class="g-pstyle5">US Federal Reserve</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2024-03-03 13:53 -->
+-
+
+
+
+
+
+
+
+        </div>
+        </div>
+    </div>
+
+    <div class="story-body">
+        <p class="body-text serif">During the pandemic, opportunities to use alternatives to cash increased dramatically. According to the US Federal Reserve, cash payments accounted for only 18 percent of all payments made in 2022. Credit cards were the most favored payment mode by the public in the same year, making up 31 percent of all payments. </p>	
+		<p class="body-text serif">According to the Fed, consumers are now making more purchases online than they did before the pandemic. This shift away from in-person payments has resulted in fewer
+			opportunities to use cash.</p>
+		<p class="body-text serif">In contrast to 2019, there were less payments of less than $25 in 2022 as a result of the shift in customer purchasing behavior. For these kinds of payments, cash has historically been utilized more frequently, as per the Fed.
+		</p>	
+    </div>
+    <div class="row-container">
+        <div class="column-container">
+             <div class="chart-section">
+				<iframe title="Note production in the US is on the decline" aria-label="Stacked Columns" id="datawrapper-chart-YJ7T2" src="https://datawrapper.dwcdn.net/YJ7T2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="556" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+              </div>
+        </div>
+        <div class="column-container">
+            <div class="chart-section">
+				<iframe title="... and so is coin production" aria-label="Stacked Columns" id="datawrapper-chart-vvqSY" src="https://datawrapper.dwcdn.net/vvqSY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="556" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+              </div>
+        </div>
+    </div>
+    <div class="story-body">
+        <p class="body-text serif">According to the latest Euromonitor International data, the number of ATMs in the U.S. in 2023 was 447,800, a 4.7 percent decline from 2019. During the same period, ATM fees have risen an average of 10 percent. </p>
+        <p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+	<section class="footer sans-serif" style="text-align:center;">
+		<p class="note"> To view code and methodology, check this <a href="https://github.com/radhika3558/rainy-weekends">Github repository</a>.</p>
+		<p class="lead" style="font-size: 1.25rem;">
+		<div style="text-align:center;">
+		  <span style="color:rgb(16, 106, 231);font-weight:bold;">
+			<a class="button" href="https://github.com/radhika3558" style="color:inherit;text-decoration:none;">
+			  <i class="fab fa-github"></i>
+			  GitHub
+			</a>
+		  </span>
+		  <span style="color:rgb(16, 106, 231);font-weight:bold;">
+			<a class="button" href="https://www.linkedin.com/in/radhikarukmangadhan/"
+			  style="color:inherit;text-decoration:none;"> <i class="fab fa-linkedin"></i>
+			  LinkedIn
+			</a>
+		  </span>
+		  <span style="color:rgb(16, 106, 231);font-weight:bold;">
+			<a class="button" href="mailto:radhika.rukmangadhan[at]gmail.com" style="color:inherit;text-decoration:none;">
+			  <i class="fa-solid fa-envelope"></i>
+			  Email
+			</a>
+		  </span>
+		</div>
+	
+		</p>
+	  </section>
+  </body>
+</html>
