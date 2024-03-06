@@ -194,6 +194,25 @@
             margin:0;
         }
 
+		.row-container {
+    display: flex;
+    justify-content: center; /* Center the columns container if there's extra space */
+    flex-wrap: wrap; /* Allow the containers to wrap on smaller screens */
+}
+
+.column-container {
+    flex: 1; /* Allows the containers to grow and fill the space */
+    display: flex;
+    justify-content: center; /* Center the chart-section */
+    padding: 10px; /* Optional: adds some space around your chart-sections */
+}
+
+.chart-section iframe {
+    max-width: 1020px; /* Sets the maximum width of the iframe */
+    width: 100%; /* Allows the iframe to be responsive and fill the parent up to 1020px */
+    border: none; /* Maintains the border:none property */
+    height: 556px; /* Adjust height as needed */
+}
 
 
 
@@ -310,7 +329,7 @@
     </div>
 
     <div class="story-body">
-      <p class="body-text serif">Busking at the Times Square subway station is now mostly digital. A quick look at the hats placed in front of performance will show how little they earn in cash. Instead, busker now brandish large QR code displays that direct patrons toward Venmo or Zelle accounts.</p>
+      <p class="body-text serif">Busking at the Times Square subway station is now mostly digital. A quick look at the hats placed in front of performance will show how little they earn in cash. Instead, buskers now brandish large QR code displays that direct patrons toward Venmo or Zelle accounts.</p>
 	  <p class="body-text serif">Shane Hill, a busker who regularly plays popular tunes on the saxophone at the station said he earns more through digital payments than in cash.</p> 
 	  <p class="body-text serif">“I used to make a lot more in cash, but now it’s mostly digital,” he said. “I think people are just carrying less cash.”</p>
 	  <p class="body-text serif">The shift to digital payments is not just a New York phenomenon. The US is producing less cash than it has in decades. The Federal Reserve has been producing fewer notes and coins since 2015, and the trend has only accelerated since the pandemic. </p>
@@ -320,6 +339,7 @@
 
     <div class="chart-section">
         <div class="chart-row">
+			
           <div class="chart">
 
 
@@ -742,22 +762,26 @@
 		</p>	
     </div>
     <div class="row-container">
-        <div class="column-container">
-             <div class="chart-section">
-				<iframe title="Note production in the US is on the decline" aria-label="Stacked Columns" id="datawrapper-chart-YJ7T2" src="https://datawrapper.dwcdn.net/YJ7T2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="556" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-				</script>
-              </div>
-        </div>
-        <div class="column-container">
-            <div class="chart-section">
-				<iframe title="... and so is coin production" aria-label="Stacked Columns" id="datawrapper-chart-vvqSY" src="https://datawrapper.dwcdn.net/vvqSY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="556" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-				</script>
-              </div>
-        </div>
+		<div class="column-container">
+			<div class="chart-section">
+				<iframe title="Note production in the US is on the decline" aria-label="Stacked Columns" id="datawrapper-chart-YJ7T2" src="https://datawrapper.dwcdn.net/YJ7T2/1/" scrolling="no" frameborder="0" style="border: none;" height="556" data-external="1"></iframe>
+				
+			</div>
+		</div>
+		<div class="column-container">
+			<div class="chart-section">
+				<iframe title="... and so is coin production" aria-label="Stacked Columns" id="datawrapper-chart-vvqSY" src="https://datawrapper.dwcdn.net/vvqSY/1/" scrolling="no" frameborder="0" style="border: none;" height="556" data-external="1"></iframe>
+				 \
+			</div>
+		</div>
+	</div>
+	
     </div>
     <div class="story-body">
         <p class="body-text serif">According to the latest Euromonitor International data, the number of ATMs in the U.S. in 2023 was 447,800, a 4.7 percent decline from 2019. During the same period, ATM fees have risen an average of 10 percent. </p>
-        <p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="body-text serif">A system that incentivizes electronic payments and makes cash withdrawals difficult has made cash circulation challenging.</p>
+		<p class="body-text serif">A group of coin industry representatives also formed the U.S. Coin Task Force, which launched an investigation into the circulation challenge, and launched the #GetCoinMoving campaign. Despite these efforts, the coin circulation challenge continues to create issues for banks, merchants, and consumers.</p>
+
     </div>
 	<section class="footer sans-serif" style="text-align:center;">
 		<p class="note"> To view code and methodology, check this <a href="https://github.com/radhika3558/cash-circulation">Github repository</a>.</p>
